@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Moguija</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Moguija</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Crear Cliente</button>
+
+  <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+    
+	        <!-- Modal content-->
+	        <div class="modal-content">
+		        <div class="modal-header">
+		          	<h4 class="modal-title">Crear Cliente</h4>
+		          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    </div>
+			    <div class="modal-body">
+			        <form action="ClienteController" method="post">
+					    <label for="inputNombre" class="sr-only">Nombre</label>
+					    <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus>
+					    
+					    <label for="inputApellido" class="sr-only">Apellido</label>
+					    <input type="text" id="inputApellido" class="form-control" placeholder="Apellido" required>
+					    
+						<label for="inputDireccion" class="sr-only">Direccion</label>
+					    <input type="text" id="inputDireccion" class="form-control" placeholder="Direccion" required>
+					    
+					    <label for="inputTelefono" class="sr-only">Telefono</label>
+					    <input type="text" id="inputTelefono" class="form-control" placeholder="Telefono" required>
+
+					    <label for="inputTelefonoAlternativo" class="sr-only">Telefono Alternativo</label>
+					    <input type="text" id="inputTelefonoAlternativo" class="form-control" placeholder="Telefono Alternativo" required>
+
+				    	<div class="modal-footer">
+				       		<button class="btn btn-lg btn-primary btn-block" type="submit">Guardar</button>
+				       		<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+			        	</div>
+			        </form>	
+			        <!--
+			        <div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      				</div> -->	
+			    </div>    
+		    </div>
+        </div>
+    </div> 
+</div>
+
+</body>
+</html>
